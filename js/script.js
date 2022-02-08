@@ -9,3 +9,4 @@ menu.addEventListener('click',()=>{
     barra3.classList.toggle("span3Active");
     capa.classList.toggle("seccionUnoActive")
 })
+//++$+$+$+
