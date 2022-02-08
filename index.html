@@ -16,203 +16,209 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      padding: 10px;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+      transition: .6s;
+      text-decoration: none;
     }
+    .attribution a:hover {
+      color: hsl(0, 0%, 100%);
+    }
+
   </style>
 </head>
 
 <body>
-  <div class="capa">
-    <header class="header">
-      <img src="images/logo.svg" alt="" class="header__logo">
-
-      <input type="checkbox" id="btn">
-      <label for="btn" class="label">
-        <span class="span1 span"> </span>
-        <span class="span2 span"> </span>
-        <span class="span3 span"> </span>
-      </label>
-
-      <!-- Menu de navegacion -->
-      <nav class="nav">
-        <ul class="nav__ul">
-          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
-          <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+    <div class="mascara">
+      <header class="header">
+        <img src="images/logo.svg" alt="" class="header__logo">
+        <input type="checkbox" id="btn">
+        <label for="btn" class="label">
+          <span class="span1 span"> </span>
+          <span class="span2 span"> </span>
+          <span class="span3 span"> </span>
+        </label>
+        <!-- Menu de navegacion -->
+        <nav class="nav">
+          <ul class="nav__ul">
+            <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+            <li class="nav__li"><a href="#" class="nav__a">Home</a></li>
+          </ul>
+        </nav>
+        <button class="seccionUno__btn seccionUno__btn--dektop" >Request Invite</button>
+      </header>
+      <section class="seccionUno">
+        <img src="images/image-mockups.png" alt="" class="seccionUno__img">
+        <!-- bg de la version desktop -->
+        <img src="images/bg-intro-desktop.svg" alt="" class="seccionUno__imgDesktop">
+        <img src="images/bg-intro-mobile.svg" alt="" class="secionUno__imgBg">
+        <h3 class="seccionUno__title">
+          Next generation <br>
+          digital banking
+        </h3>
+        <p class="seccionUno__text">
+          Take your financial life online. Your Easybank
+          account will be a one-stop-shop for spending,
+          saving, budgeting, investing, and much more.
+        </p>
+        <button class="seccionUno__btn">Request Invite</button>
+      </section>
+      <section class="seccionDos">
+        <article class="seccionDos__contenedor">
+          <h3 class="seccionDos__title seccionUno__title">
+            Why choose Easybank?
+          </h3>
+          <p class="seccionDos__text seccionUno__text">
+            We leverage Open Banking to turn your bank account into your financial hub.
+            Control your finances like never before.
+          </p>
+        </article>
+        <article class="seccionDos__beneficios">
+          <aside class="beneficios">
+            <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
+            <h6 class="beneficios__title">
+              Online Banking
+            </h6>
+            <p class="beneficios__text">
+              Our modern web and mobile applications allow you to keep track of your finances wherever you are in the
+              world.
+            </p>
+          </aside>
+          <aside class="beneficios">
+            <aside class="beneficios">
+              <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
+              <h6 class="beneficios__title">
+                Simple Budgeting
+              </h6>
+              <p class="beneficios__text">
+                See exactly where your money goes each month. Receive notifications when you’re close to hitting your
+                limits.
+              </p>
+            </aside>
+          </aside>
+          <aside class="beneficios">
+            <aside class="beneficios">
+              <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
+              <h6 class="beneficios__title">
+                Fast Onboarding
+              </h6>
+              <p class="beneficios__text">
+                We don’t do branches. Open your account in minutes online and start taking control of your finances right
+                away.
+              </p>
+            </aside>
+          </aside>
+          <aside class="beneficios">
+            <aside class="beneficios">
+              <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
+              <h6 class="beneficios__title">
+                Open API
+              </h6>
+              <p class="beneficios__text">
+                Manage your savings, investments, pension, and much more from one account. Tracking your money has never
+                been easier.
+              </p>
+            </aside>
+          </aside>
+        </article>
+      </section>
+      <section class="seccionTres">
+        <h3 class="seccionTres__title seccionUno__title">
+          Lates Articles
+        </h3>
+        <article class="seccionTres__articulos">
+          <aside class="articulos beneficios">
+            <img src="images/image-currency.jpg" alt="" class="articulos__img">
+            <p class="articulos__minitext">
+              By Willson Hutton
+            </p>
+            <p class="articulos__name">
+              Reseive money in any currency with no fees
+            </p>
+            <p class="articulos__descripcion">
+              The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive
+              money in a single …
+            </p>
+          </aside>
+          <aside class="articulos beneficios">
+            <img src="images/image-restaurant.jpg" alt="" class="articulos__img">
+            <p class="articulos__minitext">
+              By Willson Hutton
+            </p>
+            <p class="articulos__name">
+              Treat yourself without worrying about money
+            </p>
+            <p class="articulos__descripcion">
+              Our simple budgeting feature allows you to separate out your spending and set realistic limits each month.
+              That means you …
+            </p>
+          </aside>
+          <aside class="articulos beneficios">
+            <img src="images/image-plane.jpg" alt="" class="articulos__img">
+            <p class="articulos__minitext">
+              By Wilson Hutton
+            </p>
+            <p class="articulos__name">
+              Take your Easybank card wherever you go
+            </p>
+            <p class="articulos__descripcion">
+              We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad.
+              We’ll even show you …
+            </p>
+          </aside>
+          <aside class="articulos beneficios">
+            <img src="images/image-confetti.jpg" alt="" class="articulos__img">
+            <p class="articulos__minitext">
+              By Claire Robinson
+            </p>
+            <p class="articulos__name">
+              Our invite-only Beta accounts are now live!
+            </p>
+            <p class="articulos__descripcion">
+              After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an
+              invite through the site ...
+            </p>
+          </aside>
+        </article>
+      </section>
+      
+      
+        <footer class="footer">
+      <article class="footer__seccion  footer__seccionUno">
+        <img src="images/logofooter.svg" alt="" class="header__logo">
+        <aside class="footer__enlaces">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-instagram"></i>
+        </aside>
+      </article>
+      <article class="footer__seccion  footer__seccionDos">
+        <ul class="footer__ul">
+          <li class="footer__li"><a href="#" class="footer__a">About Us</a></li>
+          <li class="footer__li"><a href="#" class="footer__a">Contact</a></li>
+          <li class="footer__li"><a href="#" class="footer__a">Blog</a></li>
+          <li class="footer__li"><a href="#" class="footer__a">Careers</a></li>
+          <li class="footer__li"><a href="#" class="footer__a">Support</a></li>
+          <li class="footer__li"><a href="#" class="footer__a">Privasy Policy</a></li>
         </ul>
-      </nav>
-    </header>
-    <section class="seccionUno">
-      <img src="images/image-mockups.png" alt="" class="seccionUno__img">
-      <img src="images/bg-intro-mobile.svg" alt="" class="secionUno__imgBg">
-      <h3 class="seccionUno__title">
-        Next generation <br>
-        digital banking
-      </h3>
-      <p class="seccionUno__text">
-        Take your financial life online. Your Easybank
-        account will be a one-stop-shop for spending,
-        saving, budgeting, investing, and much more.
-      </p>
-      <button class="seccionUno__btn">Request Invite</button>
-    </section>
-    <section class="seccionDos">
-      <h3 class="seccionDos__title seccionUno__title">
-        Why choose Easybank?
-      </h3>
-      <p class="seccionDos__text seccionUno__text">
-        We leverage Open Banking to turn your bank account into your financial hub.
-        Control your finances like never before.
-      </p>
-      <article class="seccionDos__beneficios">
-        <aside class="beneficios">
-          <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
-          <h6 class="beneficios__title">
-            Online Banking
-          </h6>
-          <p class="beneficios__text">
-            Our modern web and mobile applications allow you to keep track of your finances wherever you are in the
-            world.
-          </p>
-        </aside>
-        <aside class="beneficios">
-          <aside class="beneficios">
-            <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
-            <h6 class="beneficios__title">
-              Simple Budgeting
-            </h6>
-            <p class="beneficios__text">
-              See exactly where your money goes each month. Receive notifications when you’re close to hitting your
-              limits.
-            </p>
-          </aside>
-        </aside>
-        <aside class="beneficios">
-          <aside class="beneficios">
-            <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
-            <h6 class="beneficios__title">
-              Fast Onboarding
-            </h6>
-            <p class="beneficios__text">
-              We don’t do branches. Open your account in minutes online and start taking control of your finances right
-              away.
-            </p>
-          </aside>
-        </aside>
-        <aside class="beneficios">
-          <aside class="beneficios">
-            <img src="images/icon-online.svg" alt="checkImg" class="beneficios__svg">
-            <h6 class="beneficios__title">
-              Open API
-
-            </h6>
-            <p class="beneficios__text">
-              Manage your savings, investments, pension, and much more from one account. Tracking your money has never
-              been easier.
-            </p>
-          </aside>
-        </aside>
       </article>
-    </section>
-    <section class="seccionTres">
-      <h3 class="seccionDos__title seccionUno__title">
-        Lates Articles
-      </h3>
-      <article class="seccionTres__articulos">
-        <aside class="articulos beneficios">
-          <img src="images/image-currency.jpg" alt="" class="articulos__img">
-          <p class="articulos__minitext">
-            By Willson Hutton
-          </p>
-          <p class="articulos__name">
-            Reseive money in any currency with no fees
-          </p>
-          <p class="articulos__descripcion">
-            The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive
-            money in a single …
-          </p>
-        </aside>
-        <aside class="articulos beneficios">
-          <img src="images/image-restaurant.jpg" alt="" class="articulos__img">
-          <p class="articulos__minitext">
-            By Willson Hutton
-          </p>
-          <p class="articulos__name">
-            Treat yourself without worrying about money
-          </p>
-          <p class="articulos__descripcion">
-            Our simple budgeting feature allows you to separate out your spending and set realistic limits each month.
-            That means you …
-          </p>
-        </aside>
-        <aside class="articulos beneficios">
-          <img src="images/image-plane.jpg" alt="" class="articulos__img">
-          <p class="articulos__minitext">
-            By Wilson Hutton
-
-          </p>
-          <p class="articulos__name">
-            Take your Easybank card wherever you go
-
-          </p>
-          <p class="articulos__descripcion">
-            We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad.
-            We’ll even show you …
-          </p>
-        </aside>
-        <aside class="articulos beneficios">
-          <img src="images/image-confetti.jpg" alt="" class="articulos__img">
-          <p class="articulos__minitext">
-            By Claire Robinson
-
-          </p>
-          <p class="articulos__name">
-            Our invite-only Beta accounts are now live!
-          </p>
-          <p class="articulos__descripcion">
-            After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an
-            invite through the site ...
-          </p>
-        </aside>
+      <article class="footer__seccion footer__seccionTres">
+        <button class="footer__btn  seccionUno__btn"> request Invite</button>
+      <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/ChapST1">ChapST1</a>.
+        </div>
       </article>
-    </section>
-  </div>
-
-
-  <footer class="footer">
-    <article class="footer__seccion  footer__seccionUno">
-      <img src="images/logofooter.svg" alt="" class="header__logo">
-      <aside class="footer__enlaces">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-pinterest"></i>
-        <i class="fab fa-instagram"></i>
-      </aside>
-    </article>
-    <article class="footer__seccion  footer__seccionDos">
-      <ul class="footer__ul">
-        <li class="footer__li"><a href="#" class="footer__a">About Us</a></li>
-        <li class="footer__li"><a href="#" class="footer__a">Contact</a></li>
-        <li class="footer__li"><a href="#" class="footer__a">Blog</a></li>
-        <li class="footer__li"><a href="#" class="footer__a">Careers</a></li>
-        <li class="footer__li"><a href="#" class="footer__a">Support</a></li>
-        <li class="footer__li"><a href="#" class="footer__a">Privasy Policy</a></li>
-      </ul>
-    </article>
-    <article class="footer__seccion footer__seccionTres">
-      <button class="footer__btn  seccionUno__btn"> request Invite</button>
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> 
-    </article>
-  </footer>
+        </footer>
+    </div>
   
   <script src="js/script.js"></script>
 </body>
