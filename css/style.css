@@ -14,7 +14,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000
 }
 
 #btn{
@@ -95,7 +98,7 @@
 /* seccionUno */
 .seccionUno{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -119,19 +122,26 @@
     user-select: auto;
 }
 .seccionUno__img{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: block;
+ 
     position: relative;
+    /*
     z-index: 10;
-    transform: translateY(-40px);
-    
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%)
+    */
+    z-index: 500;
 
 }
 .secionUno__imgBg{
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 0px;
+    right: 0;
+    z-index: 10;
 }
 .seccionUno__title{
     width: 90%;
@@ -159,7 +169,8 @@
 }
 .seccionDos{
     width: 100%;
-    height: 100vh;
+    
+    background: #eee;
 }
 .seccionDos__beneficios{
    
